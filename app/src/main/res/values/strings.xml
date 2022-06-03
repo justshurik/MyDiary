@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">MyDiary</string>
+    <string name="title_settings_txt">Настройки отображения событий</string>
+    <string name="txt_label_past_days">Кол-во дней в прошлом:</string>
+    <string name="txt_hint_past_days">(события будут отображаться в списке в том числе и за указанное количество календарных дней в прошлом от текущей даты)</string>
+    <string name="num_days">Кол-во дней</string>
+    <string name="txt_hint_future_days">(события будут отображаться в списке в том числе и за указанное количество календарных дней в будущем от текущей даты)</string>
+    <string name="txt_label_future_days">Кол-во дней в будущем:</string>
+    <string name="sace_settings_btn">СОХРАНИТЬ НАСТРОЙКИ</string>
+    <string name="label_name_action_setting_dialog">Название события</string>
+    <string name="label_info_action_setting_dialog">Краткое описание события</string>
+    <string name="titile_parameters_action_setting"><b>ПАРАМЕТРЫ СОБЫТИЯ</b></string>
+    <string name="lable_status_action">Статус события:</string>
+    <string name="hint_day">число</string>
+    <string name="hint_year">год</string>
+    <string name="hint_hours">часы</string>
+    <string name="hint_minutes">минуты</string>
+    <string name="hint_seconds">секунды</string>
+    <string name="time_to_generate_actions">Время для срабатывания</string>
+    <string name="add_action_setting">ДОБАВИТЬ</string>
+    <string name="label_txt_req">Частота события:</string>
+    <string name="date_action">Дата и время</string>
+
+    <string-array name="popup_menu_items">
+        <item>Изменить</item>
+        <item>Удалить</item>
+    </string-array>
+
+    <string-array name="status_items">
+        <item>Высокий</item>
+        <item>Средний</item>
+        <item>Низкий</item>
+    </string-array>
+
+    <string-array name="freq_items">
+        <item>Ежегодно</item>
+        <item>Ежемесячно</item>
+        <item>Еженедельно</item>
+        <item>Ежедневно</item>
+        <item>Один раз</item>
+    </string-array>
+
+    <string-array name="month_names">
+        <item>января</item>
+        <item>февраля</item>
+        <item>марта</item>
+        <item>апреля</item>
+        <item>мая</item>
+        <item>июня</item>
+        <item>июля</item>
+        <item>августа</item>
+        <item>сентября</item>
+        <item>октября</item>
+        <item>ноября</item>
+        <item>декабря</item>
+    </string-array>
+
+    <string-array name="week_days">
+        <item>понедельник</item>
+        <item>вторник</item>
+        <item>среда</item>
+        <item>четверг</item>
+        <item>пятница</item>
+        <item>суббота</item>
+        <item>воскресенье</item>
+    </string-array>
+
+</resources>
