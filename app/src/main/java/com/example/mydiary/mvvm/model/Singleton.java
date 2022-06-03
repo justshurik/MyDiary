@@ -74,7 +74,7 @@ public class Singleton extends Application{
 
     public Executor getExecutor() {return executor;}
 
-    public DBCalcelledActions getDb_cancelled_actions() {
+    public synchronized DBCalcelledActions getDb_cancelled_actions() {
         return db_cancelled_actions;
     }
 }
