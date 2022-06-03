@@ -86,7 +86,7 @@ public class ActionsRecyclerView extends RecyclerView.Adapter<ActionsRecyclerVie
         else sDaysToAction=String.valueOf(lDaysToAction);
 
         String sDateAndTime=context.getResources().getString(R.string.date_action)+": "+
-                actions.get(position).getsDateAction()+" "+actions.get(position).getsTimeAction()+ " ("+sDaysToAction+" дней)";
+                actions.get(position).getsDateAction()+" "+actions.get(position).getsTimeAction()+ " ("+sDaysToAction+" дн.)";
 
 
         int iStatus = actions.get(position).getiStatusAction();
