@@ -512,7 +512,7 @@ public class Action {
                 actions.add(act);
 
                 //увеличиваем на 1 год дату вправо (в будущее)
-                iRightYear--;
+                iRightYear++;
                 rightDate=sDay+"."+sMonth+"."+iRightYear;
                 //проверяем на корректность новую дату
                 rightDate=checkDateForCorrection(rightDate);
