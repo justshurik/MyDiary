@@ -22,7 +22,7 @@ public class Singleton extends Application{
     private UserSettings user_settings;
     private DBActionSettings db_action_settings;
     private DBCalcelledActions db_cancelled_actions;
-    private Executor executor;
+
 
     public static Singleton getInstance(){
         if(INSTANCE==null){
@@ -71,8 +71,6 @@ public class Singleton extends Application{
     public synchronized DBActionSettings getDb_action_settings() {
         return db_action_settings;
     }
-
-    public Executor getExecutor() {return executor;}
 
     public synchronized DBCalcelledActions getDb_cancelled_actions() {
         return db_cancelled_actions;
