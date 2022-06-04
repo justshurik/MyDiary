@@ -23,7 +23,6 @@ public class Singleton extends Application{
     private DBActionSettings db_action_settings;
     private DBCalcelledActions db_cancelled_actions;
 
-
     public static Singleton getInstance(){
         if(INSTANCE==null){
             INSTANCE = new Singleton();
@@ -43,7 +42,7 @@ public class Singleton extends Application{
         //настройки пользовательские
         this.user_settings = new UserSettings();
 
-        //база данных с настройками для генерации событий и отмененными событиями
+        //база данных с настройками для генерации событий
         this.db_action_settings = Room.
                 databaseBuilder(context,DBActionSettings.class,DBActionSettings.DATABASE_NAME).
                 allowMainThreadQueries().   //разрешил доступ в БД из главного потока, потому что иначе я хз как реализовать добавление новой настройки и последующее сразу обновление RecyclerView
