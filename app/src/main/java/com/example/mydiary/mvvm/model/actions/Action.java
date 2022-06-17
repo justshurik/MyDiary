@@ -655,7 +655,7 @@ public class Action {
 
                 if (!sFreqConditon.contains(TimeAndDateRepository.TAG_DAY) || !sFreqConditon.contains(TimeAndDateRepository.TAG_MONTH) || !sFreqConditon.contains(TimeAndDateRepository.TAG_YEAR)) return null;
                 //день
-                String sDay = parceTimeCondition(sFreqConditon, PART_TIME_IN_CONDITION.DATE);
+                String sDay = parceTimeCondition(sFreqConditon, PART_TIME_IN_CONDITION.DAY);
                 if (sDay == null) return null;
                 //месяц
                 String sMonth = parceTimeCondition(sFreqConditon, PART_TIME_IN_CONDITION.MONTH);

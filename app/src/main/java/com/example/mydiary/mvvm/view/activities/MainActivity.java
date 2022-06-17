@@ -70,7 +70,6 @@ public class MainActivity extends AppCompatActivity implements IPopupMenuActions
         RecyclerView actions_recycler_view = findViewById(R.id.actions_recycler_view);
         actions_recycler_view.setLayoutManager(new LinearLayoutManager(this));
 
-
         //вызов диалога на экране
         ((FloatingActionButton) findViewById(R.id.add_action)).setOnClickListener(new View.OnClickListener() {
             @Override

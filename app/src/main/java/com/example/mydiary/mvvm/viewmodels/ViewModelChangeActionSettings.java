@@ -109,7 +109,7 @@ public class ViewModelChangeActionSettings extends ViewModel {
                 freq += "_date:"+
                         TimeAndDateRepository.TAG_DAY +"=" + sett.sDay + ";"+
                         TimeAndDateRepository.TAG_MONTH +"=" + sett.sMonth +";"+
-                        TimeAndDateRepository.TAG_YEAR + "=" + sett.sMonth +";"+
+                        TimeAndDateRepository.TAG_YEAR + "=" + sett.sYear +";"+
                         "_time:"+
                         TimeAndDateRepository.TAG_HOUR + "=" + sett.sHour + ";"+
                         TimeAndDateRepository.TAG_MINUTE + "=" + sett.sMinute + ";"+

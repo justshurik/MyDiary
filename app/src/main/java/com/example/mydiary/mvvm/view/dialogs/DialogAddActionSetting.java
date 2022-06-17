@@ -208,6 +208,12 @@ public class DialogAddActionSetting extends DialogFragment {
                 Toast.makeText(context,"Не верно задана дата",Toast.LENGTH_SHORT).show();
                 return false;
             }
+            if(iDate<10){
+                if(sDate.length()==1){
+                    sDate="0"+sDate;
+                    etDay.setText(sDate);
+                }
+            }
             String sYear=etYear.getText().toString();
             if(sYear.length()==0) {
                 Toast.makeText(context,"Не задан год.",Toast.LENGTH_SHORT).show();
@@ -275,6 +281,13 @@ public class DialogAddActionSetting extends DialogFragment {
                 Toast.makeText(context,"Не верно задана дата",Toast.LENGTH_SHORT).show();
                 return false;
             }
+            if(iDate<10){
+                if(sDate.length()==1){
+                    sDate="0"+sDate;
+                    etDay.setText(sDate);
+                }
+            }
+
             if(!checkInputTime(context)) return false;
 
             return true;
@@ -327,6 +340,13 @@ public class DialogAddActionSetting extends DialogFragment {
             return false;
         }
 
+        if(iHour<10){
+            if(sHour.length()==1){
+                sHour="0"+sHour;
+                etHours.setText(sHour);
+            }
+        }
+
         //поле минут
         String sMinute = etMinutes.getText().toString();
         if(sMinute.length()==0){
@@ -338,6 +358,13 @@ public class DialogAddActionSetting extends DialogFragment {
             Toast.makeText(context,"Не верно заданы минуты.",Toast.LENGTH_SHORT).show();
             return false;
         }
+        if(iMinute<10){
+            if(sMinute.length()==1){
+                sMinute="0"+sMinute;
+                etMinutes.setText(sMinute);
+            }
+        }
+
 
         //поле секунд
         String sSecond = etSeconds.getText().toString();
@@ -345,12 +372,17 @@ public class DialogAddActionSetting extends DialogFragment {
             Toast.makeText(context,"Не заданы секунды. По умолчанию будет установлено значение 00.",Toast.LENGTH_SHORT).show();
             sSecond="00";
             etSeconds.setText(sSecond);
-
         }
         Integer iSeconds=Integer.valueOf(sSecond);
         if(iSeconds<0 || iSeconds>60){
             Toast.makeText(context,"Не верно заданы секунды.",Toast.LENGTH_SHORT).show();
             return false;
+        }
+        if(iSeconds<10){
+            if(sSecond.length()==1){
+                sSecond="0"+sSecond;
+                etSeconds.setText(sSecond);
+            }
         }
 
         return true;
